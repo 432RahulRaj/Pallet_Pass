@@ -6,31 +6,31 @@ export function ExhibitionsPage() {
   const exhibitions = [
     {
       id: 1,
-      title: "Modern Masters",
-      subtitle: "Revolutionary Works of the 20th Century",
-      image: "https://images.unsplash.com/photo-1577083552431-6e5fd01988f7?auto=format&fit=crop&q=80&w=2940",
+      title: "Mughal Masterpieces",
+      subtitle: "Imperial Court Art and Architecture",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
       date: "Through December 31, 2024",
-      description: "Explore groundbreaking works by Picasso, Matisse, and other pioneers who shaped modern art. This comprehensive exhibition showcases over 100 masterpieces.",
+      description: "Explore the grandeur of Mughal court paintings, miniatures, and architectural marvels. This comprehensive exhibition showcases over 100 masterpieces from the golden age of Mughal art.",
       category: "Current",
       location: "Main Gallery"
     },
     {
       id: 2,
-      title: "Renaissance Revelations",
-      subtitle: "Italian Masters Rediscovered",
-      image: "https://images.unsplash.com/photo-1578321272125-4e4c4c3643c5?auto=format&fit=crop&q=80&w=2940",
+      title: "Classical Indian Dance",
+      subtitle: "Expressions of Divine Movement",
+      image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
       date: "Through January 15, 2025",
-      description: "Journey through the Italian Renaissance with newly restored masterpieces. Experience the brilliance of da Vinci, Michelangelo, and their contemporaries.",
+      description: "Journey through India's rich tradition of classical dance forms including Bharatanatyam, Kathak, Odissi, and Kuchipudi. Experience the spiritual and artistic heritage through sculptures, paintings, and live performances.",
       category: "Current",
       location: "East Wing"
     },
     {
       id: 3,
-      title: "Contemporary Visions",
-      subtitle: "New Perspectives in Art",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=2940",
+      title: "Contemporary Indian Artists",
+      subtitle: "Modern Voices, Ancient Souls",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
       date: "Through March 1, 2025",
-      description: "Discover emerging artists pushing boundaries in contemporary art. Features multimedia installations, digital art, and experimental works.",
+      description: "Discover how contemporary Indian artists blend traditional techniques with modern themes. Features works by leading artists exploring identity, tradition, and globalization.",
       category: "Current",
       location: "Contemporary Gallery"
     }
@@ -39,17 +39,17 @@ export function ExhibitionsPage() {
   const upcomingExhibitions = [
     {
       id: 4,
-      title: "Digital Frontiers",
+      title: "Rajasthani Folk Art",
       date: "Opening April 15, 2024",
-      image: "https://images.unsplash.com/photo-1576153192396-180ecef2a715?auto=format&fit=crop&q=80&w=2940",
-      description: "Exploring the intersection of art and technology"
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
+      description: "Vibrant traditions of Rajasthan's folk artists"
     },
     {
       id: 5,
-      title: "Nature's Canvas",
+      title: "Temple Architecture",
       date: "Opening May 1, 2024",
-      image: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&q=80&w=2940",
-      description: "Environmental art and natural inspirations"
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
+      description: "Sacred geometry and divine craftsmanship"
     }
   ];
 
@@ -58,15 +58,15 @@ export function ExhibitionsPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh]">
         <img
-          src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=2940"
-          alt="Exhibition Hall"
+          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940"
+          alt="Indian Art Exhibition Hall"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4 animate-[fadeInUp_1s_ease-out]">
             <h1 className="text-5xl md:text-7xl font-serif mb-6">Exhibitions</h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-              Discover extraordinary exhibitions that inspire, educate, and transform
+              Discover extraordinary exhibitions celebrating India's rich cultural heritage
             </p>
           </div>
         </div>

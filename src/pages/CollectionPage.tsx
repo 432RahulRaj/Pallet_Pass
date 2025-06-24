@@ -1,76 +1,76 @@
-import React, { useEffect, useRef, lazy, Suspense } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Search, Filter, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const collections = [
   {
     id: 1,
-    title: "Modern Masters",
-    period: "20th Century",
-    image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=2940",
+    title: "Mughal Art & Architecture",
+    period: "16th-18th Century",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
     count: "2,500+ Works",
-    description: "A comprehensive collection of groundbreaking works by the most influential artists of the 20th century",
+    description: "A comprehensive collection of Mughal court paintings, manuscripts, and architectural elements showcasing the zenith of Indo-Islamic art",
     details: {
       highlights: [
-        "Pablo Picasso's 'Cubist Compositions'",
-        "Henri Matisse's 'The Dance Series'",
-        "Salvador Dalí's 'Surrealist Dreams'",
-        "Georgia O'Keeffe's 'Flower Studies'"
+        "Emperor Akbar's Court Paintings",
+        "Shah Jahan's Architectural Designs",
+        "Miniature Paintings from Rajput Courts",
+        "Calligraphy and Illuminated Manuscripts"
       ],
       periods: [
-        "Fauvism",
-        "Cubism",
-        "Surrealism",
-        "Abstract Expressionism",
-        "Pop Art"
+        "Babur Era",
+        "Akbar Period",
+        "Shah Jahan Era",
+        "Aurangzeb Period",
+        "Decline Period"
       ],
       featured: {
-        title: "The Evolution of Modern Art",
-        description: "Trace the revolutionary developments in artistic expression through the 20th century, from the early avant-garde movements to the emergence of abstract expressionism."
+        title: "The Golden Age of Mughal Art",
+        description: "Experience the magnificent fusion of Persian, Turkish, and Indian artistic traditions that created the distinctive Mughal style."
       }
     }
   },
   {
     id: 2,
-    title: "Asian Art",
-    period: "3000 BCE-Present",
-    image: "https://images.unsplash.com/photo-1464185613589-f8b1c3a26ff6?auto=format&fit=crop&q=80&w=2940",
+    title: "Classical Indian Sculptures",
+    period: "2nd Century BCE-12th Century CE",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
     count: "4,000+ Works",
-    description: "Chinese, Japanese, Korean, and South Asian artworks spanning millennia of cultural heritage",
+    description: "Ancient stone and bronze sculptures from temples and monasteries across the Indian subcontinent",
     details: {
       highlights: [
-        "Ming Dynasty Porcelain Collection",
-        "Japanese Edo Period Screens",
-        "Korean Celadon Ceramics",
-        "Contemporary Asian Installations"
+        "Gupta Period Buddha Statues",
+        "Chola Bronze Sculptures",
+        "Khajuraho Temple Carvings",
+        "Gandhara School Masterpieces"
       ],
       periods: [
-        "Ancient China",
-        "Edo Period Japan",
-        "Joseon Dynasty Korea",
-        "Modern Asian Art"
+        "Mauryan Art",
+        "Gupta Classical",
+        "Chola Bronzes",
+        "Medieval Temple Art"
       ]
     }
   },
   {
     id: 3,
-    title: "Contemporary Visions",
-    period: "1970-Present",
-    image: "https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?auto=format&fit=crop&q=80&w=2940",
+    title: "Folk & Tribal Art",
+    period: "Traditional to Contemporary",
+    image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
     count: "3,000+ Works",
-    description: "Cutting-edge contemporary art pushing boundaries and challenging perspectives",
+    description: "Vibrant folk traditions from across India including Madhubani, Warli, Pattachitra, and tribal art forms",
     details: {
       highlights: [
-        "Digital Art Installations",
-        "Mixed Media Sculptures",
-        "Video Art Collection",
-        "Performance Art Documentation"
+        "Madhubani Paintings from Bihar",
+        "Warli Art from Maharashtra",
+        "Pattachitra from Odisha",
+        "Gond Art from Central India"
       ],
       periods: [
-        "Postmodernism",
-        "Neo-Expressionism",
-        "Digital Age",
-        "Contemporary"
+        "Traditional Folk",
+        "Tribal Heritage",
+        "Contemporary Folk",
+        "Revival Movements"
       ]
     }
   }
@@ -104,8 +104,8 @@ export function CollectionPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh]">
         <img
-          src="https://images.unsplash.com/photo-1594799295965-0b44e343c6b3?auto=format&fit=crop&q=80&w=2940"
-          alt="Collection Gallery"
+          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940"
+          alt="Indian Art Collection Gallery"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -113,7 +113,7 @@ export function CollectionPage() {
           <div className="text-center text-white px-4 hero-content">
             <h1 className="text-5xl md:text-6xl font-serif mb-6">Our Collection</h1>
             <p className="text-xl max-w-2xl mx-auto">
-              Explore over 10,000 years of human creativity through our comprehensive collection
+              Explore over 5,000 years of Indian artistic heritage through our comprehensive collection
             </p>
           </div>
         </div>
@@ -224,10 +224,10 @@ export function CollectionPage() {
           <h2 className="text-4xl font-serif mb-12 text-center animate-on-scroll opacity-0">Collection Highlights</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-on-scroll opacity-0">
             {[
-              "https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?auto=format&fit=crop&q=80&w=800",
-              "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=800",
-              "https://images.unsplash.com/photo-1464185613589-f8b1c3a26ff6?auto=format&fit=crop&q=80&w=800",
-              "https://images.unsplash.com/photo-1594799295965-0b44e343c6b3?auto=format&fit=crop&q=80&w=800"
+              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800",
+              "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800",
+              "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=800",
+              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800"
             ].map((image, index) => (
               <div
                 key={index}
@@ -235,7 +235,7 @@ export function CollectionPage() {
               >
                 <img
                   src={image}
-                  alt={`Highlight ${index + 1}`}
+                  alt={`Indian Art Highlight ${index + 1}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

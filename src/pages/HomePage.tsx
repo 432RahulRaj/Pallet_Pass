@@ -29,8 +29,8 @@ export function HomePage() {
     <div className="overflow-x-hidden">
       <section className="relative h-screen">
         <img
-          src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=2940"
-          alt="Museum Gallery"
+          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940"
+          alt="Indian Art Gallery"
           className="w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
@@ -39,7 +39,7 @@ export function HomePage() {
           <div className="text-center text-white px-4 hero-content">
             <h2 className="text-6xl md:text-8xl font-serif mb-8">Experience Art Differently</h2>
             <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
-              Discover our world-class collection spanning over 5,000 years of creativity
+              Discover our world-class collection spanning over 5,000 years of Indian creativity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
@@ -66,7 +66,7 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: Clock, title: "Opening Hours", desc: "Open Daily 10:00 AM - 5:30 PM" },
-              { icon: MapPin, title: "Location", desc: "200 Central Park West, NY" },
+              { icon: MapPin, title: "Location", desc: "KIIT UNIVERSITY Patia Bhubneswar Odisha 751024" },
               { icon: Calendar, title: "Special Events", desc: "Check our calendar" },
               { icon: Users, title: "Guided Tours", desc: "Available daily at 11 AM & 2 PM" }
             ].map((item, index) => (
@@ -84,7 +84,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="parallax-section h-[40vh]" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?auto=format&fit=crop&q=80&w=2940)' }}>
+      <section className="parallax-section h-[40vh]" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4 animate-on-scroll opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Start Your Journey Today</h2>
@@ -110,25 +110,25 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Modern Masters",
-                image: "https://images.unsplash.com/photo-1577083552431-6e5fd01988f7?auto=format&fit=crop&q=80&w=2940",
+                title: "Mughal Masterpieces",
+                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
                 date: "Through December 31, 2024",
-                desc: "Explore the revolutionary works of 20th-century pioneers",
-                slug: "modern-masters"
+                desc: "Explore the grandeur of Mughal court paintings and miniatures",
+                slug: "mughal-masterpieces"
               },
               {
-                title: "Renaissance Revelations",
-                image: "https://images.unsplash.com/photo-1578321272125-4e4c4c3643c5?auto=format&fit=crop&q=80&w=2940",
+                title: "Classical Dance Forms",
+                image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
                 date: "Through January 15, 2025",
-                desc: "Masterpieces from the Italian Renaissance",
-                slug: "renaissance-revelations"
+                desc: "Journey through India's rich tradition of classical dance",
+                slug: "classical-dance-forms"
               },
               {
-                title: "Contemporary Visions",
-                image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=2940",
+                title: "Contemporary Indian Art",
+                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
                 date: "Through March 1, 2025",
-                desc: "Bold new perspectives in contemporary art",
-                slug: "contemporary-visions"
+                desc: "Bold new perspectives in modern Indian art",
+                slug: "contemporary-indian-art"
               }
             ].map((exhibition, index) => (
               <Link 
@@ -167,19 +167,19 @@ export function HomePage() {
                     title: "Art After Dark",
                     date: "March 15, 2024",
                     time: "6:00 PM - 9:00 PM",
-                    desc: "Evening of art, music, and cocktails"
+                    desc: "Evening of art, music, and classical performances"
                   },
                   {
-                    title: "Artist Talk: Sarah Chen",
+                    title: "Artist Talk: Ravi Shankar",
                     date: "March 20, 2024",
                     time: "2:00 PM - 3:30 PM",
-                    desc: "Contemporary artist discusses her work"
+                    desc: "Contemporary artist discusses his work"
                   },
                   {
                     title: "Family Workshop",
                     date: "March 23, 2024",
                     time: "10:00 AM - 12:00 PM",
-                    desc: "Creative activities for all ages"
+                    desc: "Traditional craft activities for all ages"
                   }
                 ].map((event, index) => (
                   <div 
@@ -203,26 +203,26 @@ export function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-on-scroll opacity-0">
               <img 
-                src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=2940" 
-                alt="Event 1"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940" 
+                alt="Indian Art Event 1"
                 className="w-full h-48 object-cover rounded-lg"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1577083552431-6e5fd01988f7?auto=format&fit=crop&q=80&w=2940" 
-                alt="Event 2"
+                src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940" 
+                alt="Classical Dance Event"
                 className="w-full h-48 object-cover rounded-lg mt-8"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1578321272125-4e4c4c3643c5?auto=format&fit=crop&q=80&w=2940" 
-                alt="Event 3"
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940" 
+                alt="Traditional Art Workshop"
                 className="w-full h-48 object-cover rounded-lg"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=2940" 
-                alt="Event 4"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940" 
+                alt="Indian Heritage Event"
                 className="w-full h-48 object-cover rounded-lg mt-8"
                 loading="lazy"
               />

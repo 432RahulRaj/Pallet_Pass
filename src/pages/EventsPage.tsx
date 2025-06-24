@@ -28,37 +28,37 @@ export function EventsPage() {
   const events = [
     {
       id: 1,
-      title: "Art After Dark",
+      title: "Classical Music Evening",
       category: "Special Event",
       date: "March 15, 2024",
       time: "6:00 PM - 9:00 PM",
       location: "Main Gallery",
-      image: "https://images.unsplash.com/photo-1577083552431-6e5fd01988f7?auto=format&fit=crop&q=80&w=2940",
-      description: "Join us for an evening of art, music, and cocktails. Experience the museum in a new light with special performances and interactive installations.",
+      image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
+      description: "Join us for an evening of Indian classical music performances among the art collections. Experience the harmony of visual and musical arts with renowned musicians.",
       price: "₹2000",
       capacity: "200 people"
     },
     {
       id: 2,
-      title: "Artist Talk: Sarah Chen",
+      title: "Artist Talk: Madhubani Masters",
       category: "Lecture",
       date: "March 20, 2024",
       time: "2:00 PM - 3:30 PM",
       location: "Lecture Hall",
-      image: "https://images.unsplash.com/photo-1578321272125-4e4c4c3643c5?auto=format&fit=crop&q=80&w=2940",
-      description: "Contemporary artist Sarah Chen discusses her work and creative process, followed by Q&A session.",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
+      description: "Master artists from Bihar discuss the ancient art of Madhubani painting, its cultural significance, and contemporary adaptations.",
       price: "Free with admission",
       capacity: "150 people"
     },
     {
       id: 3,
-      title: "Family Workshop: Creative Minds",
+      title: "Family Workshop: Indian Folk Art",
       category: "Workshop",
       date: "March 23, 2024",
       time: "10:00 AM - 12:00 PM",
       location: "Education Center",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=2940",
-      description: "A hands-on workshop for families to explore art-making techniques together. All materials provided.",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
+      description: "A hands-on workshop for families to explore traditional Indian folk art techniques including Warli and Gond art styles. All materials provided.",
       price: "₹1500 per family",
       capacity: "30 families"
     }
@@ -71,15 +71,15 @@ export function EventsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh]">
         <img
-          src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=2940"
-          alt="Events"
+          src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940"
+          alt="Indian Cultural Events"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4 hero-content">
             <h1 className="text-5xl md:text-6xl font-serif mb-6">Events & Programs</h1>
             <p className="text-xl max-w-2xl mx-auto">
-              Join us for exciting events, workshops, lectures, and special programs
+              Join us for exciting cultural events, workshops, lectures, and traditional performances
             </p>
           </div>
         </div>
@@ -166,9 +166,9 @@ export function EventsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll opacity-0">
-              <h2 className="text-4xl font-serif mb-6">Upcoming Events Calendar</h2>
+              <h2 className="text-4xl font-serif mb-6">Upcoming Cultural Calendar</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Plan your visit with our comprehensive events calendar. Filter by date, type, or interest.
+                Plan your visit with our comprehensive cultural events calendar. Experience the best of Indian arts, music, and traditions.
               </p>
               <Link 
                 to="/booking"
@@ -180,13 +180,13 @@ export function EventsPage() {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-on-scroll opacity-0">
               <img
-                src="https://images.unsplash.com/photo-1577083552431-6e5fd01988f7?auto=format&fit=crop&q=80&w=800"
-                alt="Event Preview 1"
+                src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=800"
+                alt="Classical Dance Performance"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src="https://images.unsplash.com/photo-1578321272125-4e4c4c3643c5?auto=format&fit=crop&q=80&w=800"
-                alt="Event Preview 2"
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800"
+                alt="Traditional Art Workshop"
                 className="w-full h-48 object-cover rounded-lg mt-8"
               />
             </div>

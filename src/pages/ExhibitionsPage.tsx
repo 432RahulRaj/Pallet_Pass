@@ -2,15 +2,23 @@ import React from 'react';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Import images
+import heroImage from '../assets/indian-art-exhibition-picture-that-can-be-put-up-a (1).jpg';
+import pattachitraImage from '../assets/pattachitra-depiction-focus--with-people-reviewing.jpg';
+import danceImage from '../assets/focus-on-a-human-reviewing-indian-art-and-paint-ex (2).jpg';
+import warliImage from '../assets/large-warli-art-depiction-with-people-reviewing-it.jpg';
+import upcomingImage1 from '../assets/indian-art-and-paint-outdoor hlght.jpg';
+import upcomingImage2 from '../assets/indian-art-exhibition-picture-that-can-be-put-up-a.jpg';
+
 export function ExhibitionsPage() {
   const exhibitions = [
     {
       id: 1,
-      title: "Mughal Masterpieces",
-      subtitle: "Imperial Court Art and Architecture",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
+      title: "Pattachitra Heritage",
+      subtitle: "Traditional Art of Odisha",
+      image: pattachitraImage,
       date: "Through December 31, 2024",
-      description: "Explore the grandeur of Mughal court paintings, miniatures, and architectural marvels. This comprehensive exhibition showcases over 100 masterpieces from the golden age of Mughal art.",
+      description: "Explore the ancient art of Pattachitra, traditional cloth-based scroll painting from Odisha. This comprehensive exhibition showcases over 100 masterpieces depicting mythological narratives and folk tales.",
       category: "Current",
       location: "Main Gallery"
     },
@@ -18,7 +26,7 @@ export function ExhibitionsPage() {
       id: 2,
       title: "Classical Indian Dance",
       subtitle: "Expressions of Divine Movement",
-      image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
+      image: danceImage,
       date: "Through January 15, 2025",
       description: "Journey through India's rich tradition of classical dance forms including Bharatanatyam, Kathak, Odissi, and Kuchipudi. Experience the spiritual and artistic heritage through sculptures, paintings, and live performances.",
       category: "Current",
@@ -26,30 +34,30 @@ export function ExhibitionsPage() {
     },
     {
       id: 3,
-      title: "Contemporary Indian Artists",
-      subtitle: "Modern Voices, Ancient Souls",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
+      title: "Warli Folk Art",
+      subtitle: "Tribal Heritage of Maharashtra",
+      image: warliImage,
       date: "Through March 1, 2025",
-      description: "Discover how contemporary Indian artists blend traditional techniques with modern themes. Features works by leading artists exploring identity, tradition, and globalization.",
+      description: "Discover the ancient Warli painting tradition of Maharashtra's tribal communities. These geometric art forms tell stories of daily life, nature, and spirituality through simple yet profound imagery.",
       category: "Current",
-      location: "Contemporary Gallery"
+      location: "Folk Art Gallery"
     }
   ];
 
   const upcomingExhibitions = [
     {
       id: 4,
-      title: "Rajasthani Folk Art",
+      title: "Outdoor Art Installations",
       date: "Opening April 15, 2024",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
-      description: "Vibrant traditions of Rajasthan's folk artists"
+      image: upcomingImage1,
+      description: "Contemporary Indian art in natural settings"
     },
     {
       id: 5,
-      title: "Temple Architecture",
+      title: "Traditional Craft Revival",
       date: "Opening May 1, 2024",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
-      description: "Sacred geometry and divine craftsmanship"
+      image: upcomingImage2,
+      description: "Master craftsmen preserving ancient techniques"
     }
   ];
 
@@ -58,7 +66,7 @@ export function ExhibitionsPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh]">
         <img
-          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940"
+          src={heroImage}
           alt="Indian Art Exhibition Hall"
           className="w-full h-full object-cover"
         />

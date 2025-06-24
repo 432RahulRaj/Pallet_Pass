@@ -2,6 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import { ArrowRight, Calendar, Clock, MapPin, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Import images
+import heroImage from '../assets/indian-art-exhibition-picture-outdoors.jpg';
+import parallaxImage from '../assets/indian-art-and-paint-outdoor-exhibition-in-day-tim.jpg';
+import mughalImage from '../assets/pattachitra-depiction-focus hlght.jpg';
+import danceImage from '../assets/focus-on-a-human-reviewing-indian-art-and-paint-ex (1).jpg';
+import contemporaryImage from '../assets/warli-art-depiction hlght.jpg';
+import event1Image from '../assets/art-after-dark-themed-indian-art-event.jpg';
+import event2Image from '../assets/chitra-divas-indian-art-event.jpg';
+import event3Image from '../assets/udaya-kala-art-at-sunrise--indian-art-event.jpg';
+import event4Image from '../assets/madhubani-art-depiction-with-people-reviewing-it-b.jpg';
+
 export function HomePage() {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
@@ -29,7 +40,7 @@ export function HomePage() {
     <div className="overflow-x-hidden">
       <section className="relative h-screen">
         <img
-          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940"
+          src={heroImage}
           alt="Indian Art Gallery"
           className="w-full h-full object-cover"
           loading="eager"
@@ -84,7 +95,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="parallax-section h-[40vh]" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940)' }}>
+      <section className="parallax-section h-[40vh]" style={{ backgroundImage: `url(${parallaxImage})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white px-4 animate-on-scroll opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Start Your Journey Today</h2>
@@ -110,25 +121,25 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Mughal Masterpieces",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
+                title: "Pattachitra Heritage",
+                image: mughalImage,
                 date: "Through December 31, 2024",
-                desc: "Explore the grandeur of Mughal court paintings and miniatures",
-                slug: "mughal-masterpieces"
+                desc: "Explore the traditional art of Pattachitra from Odisha",
+                slug: "pattachitra-heritage"
               },
               {
                 title: "Classical Dance Forms",
-                image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
+                image: danceImage,
                 date: "Through January 15, 2025",
                 desc: "Journey through India's rich tradition of classical dance",
                 slug: "classical-dance-forms"
               },
               {
-                title: "Contemporary Indian Art",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
+                title: "Warli Folk Art",
+                image: contemporaryImage,
                 date: "Through March 1, 2025",
-                desc: "Bold new perspectives in modern Indian art",
-                slug: "contemporary-indian-art"
+                desc: "Traditional tribal art from Maharashtra",
+                slug: "warli-folk-art"
               }
             ].map((exhibition, index) => (
               <Link 
@@ -170,13 +181,13 @@ export function HomePage() {
                     desc: "Evening of art, music, and classical performances"
                   },
                   {
-                    title: "Artist Talk: Ravi Shankar",
+                    title: "Chitra Divas Celebration",
                     date: "March 20, 2024",
                     time: "2:00 PM - 3:30 PM",
-                    desc: "Contemporary artist discusses his work"
+                    desc: "Celebrating the richness of Indian visual arts"
                   },
                   {
-                    title: "Family Workshop",
+                    title: "Udaya Kala - Art at Sunrise",
                     date: "March 23, 2024",
                     time: "10:00 AM - 12:00 PM",
                     desc: "Traditional craft activities for all ages"
@@ -203,26 +214,26 @@ export function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-on-scroll opacity-0">
               <img 
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940" 
-                alt="Indian Art Event 1"
+                src={event1Image} 
+                alt="Art After Dark Event"
                 className="w-full h-48 object-cover rounded-lg"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940" 
-                alt="Classical Dance Event"
+                src={event2Image} 
+                alt="Chitra Divas Event"
                 className="w-full h-48 object-cover rounded-lg mt-8"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940" 
-                alt="Traditional Art Workshop"
+                src={event3Image} 
+                alt="Udaya Kala Event"
                 className="w-full h-48 object-cover rounded-lg"
                 loading="lazy"
               />
               <img 
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940" 
-                alt="Indian Heritage Event"
+                src={event4Image} 
+                alt="Madhubani Art Event"
                 className="w-full h-48 object-cover rounded-lg mt-8"
                 loading="lazy"
               />

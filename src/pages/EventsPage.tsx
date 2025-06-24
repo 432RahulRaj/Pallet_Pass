@@ -1,6 +1,14 @@
 import React, { useEffect, useRef } from 'react';
-import { Calendar, Clock, MapPin, Users, ArrowRight, Filter } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+// Import images
+import heroImage from '../assets/chitra-divas-indian-art-event.jpg';
+import event1Image from '../assets/art-after-dark-themed-indian-art-event.jpg';
+import event2Image from '../assets/focus-on-a-human-reviewing-indian-art-and-paint-ex (1).jpg';
+import event3Image from '../assets/udaya-kala-art-at-sunrise--indian-art-event.jpg';
+import calendar1Image from '../assets/art-after-dark-themed preview.jpg';
+import calendar2Image from '../assets/udaya-kala-art-at-sunrise preview.jpg';
 
 export function EventsPage() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -28,39 +36,39 @@ export function EventsPage() {
   const events = [
     {
       id: 1,
-      title: "Classical Music Evening",
+      title: "Art After Dark",
       category: "Special Event",
       date: "March 15, 2024",
       time: "6:00 PM - 9:00 PM",
       location: "Main Gallery",
-      image: "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940",
-      description: "Join us for an evening of Indian classical music performances among the art collections. Experience the harmony of visual and musical arts with renowned musicians.",
+      image: event1Image,
+      description: "Join us for an evening of Indian classical music performances among the art collections. Experience the harmony of visual and musical arts with renowned musicians in an atmospheric setting.",
       price: "₹2000",
       capacity: "200 people"
     },
     {
       id: 2,
-      title: "Artist Talk: Madhubani Masters",
-      category: "Lecture",
+      title: "Interactive Art Experience",
+      category: "Workshop",
       date: "March 20, 2024",
       time: "2:00 PM - 3:30 PM",
-      location: "Lecture Hall",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=2940",
-      description: "Master artists from Bihar discuss the ancient art of Madhubani painting, its cultural significance, and contemporary adaptations.",
+      location: "Education Center",
+      image: event2Image,
+      description: "Engage with art through interactive sessions where visitors can touch, feel, and understand the techniques behind traditional Indian art forms. Perfect for art enthusiasts of all ages.",
       price: "Free with admission",
       capacity: "150 people"
     },
     {
       id: 3,
-      title: "Family Workshop: Indian Folk Art",
-      category: "Workshop",
+      title: "Udaya Kala - Art at Sunrise",
+      category: "Cultural Event",
       date: "March 23, 2024",
-      time: "10:00 AM - 12:00 PM",
-      location: "Education Center",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=2940",
-      description: "A hands-on workshop for families to explore traditional Indian folk art techniques including Warli and Gond art styles. All materials provided.",
-      price: "₹1500 per family",
-      capacity: "30 families"
+      time: "6:00 AM - 8:00 AM",
+      location: "Outdoor Pavilion",
+      image: event3Image,
+      description: "Experience the beauty of Indian art as the sun rises. This unique event combines traditional art appreciation with the serenity of dawn, featuring live painting demonstrations.",
+      price: "₹1500 per person",
+      capacity: "100 people"
     }
   ];
 
@@ -71,8 +79,8 @@ export function EventsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh]">
         <img
-          src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=2940"
-          alt="Indian Cultural Events"
+          src={heroImage}
+          alt="Chitra Divas - Indian Cultural Events"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -180,13 +188,13 @@ export function EventsPage() {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-on-scroll opacity-0">
               <img
-                src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&q=80&w=800"
-                alt="Classical Dance Performance"
+                src={calendar1Image}
+                alt="Art After Dark Preview"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800"
-                alt="Traditional Art Workshop"
+                src={calendar2Image}
+                alt="Udaya Kala Preview"
                 className="w-full h-48 object-cover rounded-lg mt-8"
               />
             </div>

@@ -49,7 +49,7 @@ A modern, responsive web application for an Indian art museum featuring online t
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/pallet-pass.git
+   git clone https://github.com/432RahulRaj/pallet-pass.git
    cd pallet-pass
    ```
 

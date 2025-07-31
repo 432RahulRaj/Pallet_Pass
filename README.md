@@ -37,7 +37,7 @@ A modern, responsive web application for an Indian art museum featuring online t
 - **Forms**: React Hook Form with Zod validation
 - **Routing**: React Router DOM
 - **Notifications**: Sonner
-- **Deployment**: Netlify
+- **Deployment**: Vercel
 
 ## 📋 Prerequisites
 

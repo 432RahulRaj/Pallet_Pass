@@ -25,7 +25,7 @@ A modern, responsive web application for an Indian art museum featuring online t
 
 ## 🚀 Live Demo
 
-**Deployed Application**: [https://cheerful-cucurucho-ad22fb.netlify.app](https://cheerful-cucurucho-ad22fb.netlify.app)
+**Deployed Application**: [https://pallet-pass.netlify.app/](https://pallet-pass.netlify.app/)
 
 ## 🛠️ Tech Stack
 

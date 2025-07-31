@@ -25,7 +25,7 @@ A modern, responsive web application for an Indian art museum featuring online t
 
 ## 🚀 Live Demo
 
-**Deployed Application**: [https://pallet-pass.netlify.app/](https://pallet-pass.netlify.app/)
+**Deployed Application**: [Pallet Pass](https://pallet-pass.vercel.app/)
 
 ## 🛠️ Tech Stack
 
